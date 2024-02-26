@@ -24,4 +24,10 @@ export default await Env.create(new URL('../', import.meta.url), {
   |----------------------------------------------------------
   */
   SESSION_DRIVER: Env.schema.enum(['cookie', 'memory'] as const),
+
+  PG_HOST: Env.schema.string(),
+  PG_PORT: Env.schema.number(),
+  PG_USER: Env.schema.string(),
+  PG_PASSWORD: Env.schema.string(),
+  PG_DATABASE: Env.schema.string(),
 })
